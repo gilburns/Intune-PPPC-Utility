@@ -1,0 +1,13 @@
+## User settings
+xcuserdata/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+
+.DS_Store
+/Icon
+/Examples
