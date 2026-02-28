@@ -1,7 +1,7 @@
 # Intune PPPC Utility
 
 <p align="center">
-  <img src="Intune%20PPPC%20Utility/Assets.xcassets/AppIcon.appiconset/Intune PPPC Utility-macOS-Default-256x256@1x.png" alt="Intune PPPC Utility icon" width="128">
+  <img src="Intune PPPC Utility/Assets.xcassets/AppIcon.appiconset/Intune PPPC Utility-macOS-Default-256x256@1x.png" alt="Intune PPPC Utility icon" width="128">
 </p>
 
 A macOS utility for creating and editing **Privacy Preferences Policy Control (PPPC)** configuration profiles for deployment through **Microsoft Intune**.
