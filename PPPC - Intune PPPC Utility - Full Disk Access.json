@@ -1,0 +1,114 @@
+{
+  "@odata.context" : "https:\/\/graph.microsoft.com\/beta\/$metadata#deviceManagement\/configurationPolicies\/$entity",
+  "name" : "PPPC - Intune PPPC Utility - Full Disk Access",
+  "creationSource" : null,
+  "id" : "fd1002eb-ba40-487f-9737-d4cd2306f1d0",
+  "settings" : [
+    {
+      "settingInstance" : {
+        "groupSettingCollectionValue" : [
+          {
+            "settingValueTemplateReference" : null,
+            "children" : [
+              {
+                "settingInstanceTemplateReference" : null,
+                "@odata.type" : "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services",
+                "groupSettingCollectionValue" : [
+                  {
+                    "settingValueTemplateReference" : null,
+                    "children" : [
+                      {
+                        "groupSettingCollectionValue" : [
+                          {
+                            "children" : [
+                              {
+                                "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                "settingInstanceTemplateReference" : null,
+                                "auditRuleInformation" : null,
+                                "choiceSettingValue" : {
+                                  "children" : [
+
+                                  ],
+                                  "value" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                  "settingValueTemplateReference" : null
+                                },
+                                "@odata.type" : "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                              },
+                              {
+                                "auditRuleInformation" : null,
+                                "settingInstanceTemplateReference" : null,
+                                "@odata.type" : "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "simpleSettingValue" : {
+                                  "@odata.type" : "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "settingValueTemplateReference" : null,
+                                  "value" : "anchor apple generic and identifier \"com.gilburns.IntunePPPCUtility\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] \/* exists *\/ or certificate 1[field.1.2.840.113635.100.6.2.6] \/* exists *\/ and certificate leaf[field.1.2.840.113635.100.6.1.13] \/* exists *\/ and certificate leaf[subject.OU] = G4MQ57TVLE)"
+                                },
+                                "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement"
+                              },
+                              {
+                                "settingInstanceTemplateReference" : null,
+                                "auditRuleInformation" : null,
+                                "simpleSettingValue" : {
+                                  "settingValueTemplateReference" : null,
+                                  "@odata.type" : "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "value" : "com.gilburns.IntunePPPCUtility"
+                                },
+                                "@odata.type" : "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier"
+                              },
+                              {
+                                "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                "auditRuleInformation" : null,
+                                "@odata.type" : "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "choiceSettingValue" : {
+                                  "settingValueTemplateReference" : null,
+                                  "value" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                  "children" : [
+
+                                  ]
+                                },
+                                "settingInstanceTemplateReference" : null
+                              }
+                            ],
+                            "settingValueTemplateReference" : null
+                          }
+                        ],
+                        "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles",
+                        "settingInstanceTemplateReference" : null,
+                        "@odata.type" : "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "auditRuleInformation" : null
+                      }
+                    ]
+                  }
+                ],
+                "auditRuleInformation" : null
+              }
+            ]
+          }
+        ],
+        "settingDefinitionId" : "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+        "@odata.type" : "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingInstanceTemplateReference" : null,
+        "auditRuleInformation" : null
+      },
+      "id" : "0"
+    }
+  ],
+  "description" : "This configuration provides Intune PPPC Utility with Full Disk Access. This access is required for it to be able to read values from the local TCC databases.",
+  "roleScopeTagIds" : [
+    "0"
+  ],
+  "settingCount" : 1,
+  "technologies" : "mdm,appleRemoteManagement",
+  "lastModifiedDateTime" : "2026-03-02T02:38:38.184Z",
+  "priorityMetaData" : null,
+  "createdDateTime" : "2026-03-02T02:36:08.305Z",
+  "templateReference" : {
+    "templateDisplayName" : null,
+    "templateDisplayVersion" : null,
+    "templateId" : "",
+    "templateFamily" : "none"
+  },
+  "platforms" : "macOS"
+}
